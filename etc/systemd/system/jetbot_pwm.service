@@ -1,0 +1,10 @@
+[Unit]
+Description=Jetbot pwm systemd service.
+
+[Service]
+Type=simple
+User=root
+ExecStart=/bin/bash /usr/bin/pwm.sh
+
+[Install]
+WantedBy=multi-user.target
