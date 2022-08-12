@@ -1,9 +1,9 @@
 # Setup code overrides for GIC activity
 
-cp usr/bin/pwm.sh /usr/bin/
+sudo cp usr/bin/pwm.sh /usr/bin/
 sudo chmod +x /usr/bin/pwm.sh
 
-cp etc/systemd/system/jetbot_pwm.service /etc/systemd/system/
+sudo cp etc/systemd/system/jetbot_pwm.service /etc/systemd/system/
 
 sudo systemctl start jetbot_pwm.service
 sudo systemctl enable jetbot_pwm.service
