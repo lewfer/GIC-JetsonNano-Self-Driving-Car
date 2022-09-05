@@ -37,7 +37,7 @@ class Robot(SingletonConfigurable):
     @traitlets.observe('left_motor_value')
     def _observe_left_motor_value(self, change):
         #self._write_value(change['new'])
-        print("left change", change['new'])
+        #print("left change", change['new'])
         self.left_motor_value = change['new']
         self.set_motors(left_speed=self.left_motor_value, right_speed=self.right_motor_value)
         
@@ -45,7 +45,7 @@ class Robot(SingletonConfigurable):
     @traitlets.observe('right_motor_value')
     def _observe_right_motor_value(self, change):
         #self._write_value(change['new'])
-        print("right change", change['new'])
+        #print("right change", change['new'])
         self.right_motor_value = change['new']
         self.set_motors(left_speed=self.left_motor_value, right_speed=self.right_motor_value)
         
