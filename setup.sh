@@ -8,10 +8,9 @@ sudo systemctl start jetbot_pwm.service
 sudo systemctl enable jetbot_pwm.service
 
 # Code to use L298N motor driver instead of the Adafruit one
-mv ~/jetbot/jetbot/robot.py robot_original.py
+mv ~/jetbot/jetbot/robot.py ~/jetbot/jetbot/robot_original.py
 cp jetbot/jetbot/robot.py ~/jetbot/jetbot/
-cp jetbot/jetbot/robot.py /usr/local/lib/python3.6/dist-packages/jetbot-0.4.3-py3.6.egg/jetbot
 
 # GIC workshop code
 mkdir ~/jetbot/notebooks/gic
-cp -R jetbot/notebooks/gic ~/jetbot/notebooks/gic
+cp -R gic ~/jetbot/notebooks/
